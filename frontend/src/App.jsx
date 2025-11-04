@@ -6,7 +6,6 @@ export default function App() {
   const mainChartRef = useRef(null);
   const compareChartRef = useRef(null);
 
-
   useEffect(() => {
     fetch(`${import.meta.env.VITE_API_BASE || "http://localhost:8000"}/api/analizar`)
       .then((res) => res.json())
